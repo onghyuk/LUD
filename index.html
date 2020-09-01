@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUD</title>
+    
+  
+ 
+    
+    
+    <style>
+        
+        body{
+            background-color: black;
+        }
+        
+        
+        p{
+            margin: 0px;
+        }
+        
+        .background{
+            
+            
+            
+        }
+        
+        .navigation{
+            
+        }
+        
+        .category{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        
+            width: 30vw;
+            height: 90vh;
+            background-color: rgba(255,255,255);
+            color: black;
+            
+            
+            
+            margin-top: 50px;
+            margin-bottom: -50px;
+            
+            overflow: scroll;
+        }
+        
+                            .grey{
+                                width: 3vw;
+                                height: 3vh;
+
+                                background-color: lightgray;
+                            
+                            }
+        
+                            .yellow{
+                                width: 3vw;
+                                height: 3vh;
+
+                                background-color: yellow;
+                            }
+
+                            .cyan{
+                                width: 3vw;
+                                height: 3vh;
+
+                                background-color: cyan;
+                            }
+        
+                            .green{
+                                 width: 3vw;
+                                 height: 3vh;
+
+                                 background-color: greenyellow;
+                            }
+
+        .works{
+            position: relative;
+            left: 0px;
+            top: 0px;
+            
+            width: 25vw;
+            height: 90vh;
+        }
+        
+        .workabout{
+            
+            position: relative;
+            left: 0px;
+            top: 0px;
+            
+            width: 30vw;
+            
+             display: grid;
+             grid-template-columns: 2vw 1fr;
+            
+            
+        }
+        
+        .list{
+            position: absolute;
+            top:0px;
+            left: 2vw;
+            
+            height: 3vh;
+            
+            
+            font-size: 9px;
+            vertical-align: center; 
+            
+            
+            margin-left: 15px;
+            
+            
+            
+        }
+        
+        .colorbox{
+            position: relative;
+            left: 0px;
+            top:0px;
+        }
+        
+        
+        .map{
+        
+        position: absolute;
+        left:25vw;
+        bottom:82.5vh;
+            
+        width: 5vw;
+        height: 10vh;
+            
+         
+            
+        background-color: rgba(255,255,255);
+       
+       }
+        
+        .map:hover{
+        
+        position: absolute;
+        left:25vw;
+        top:7vh;
+            
+        width: 80vw;
+        height: 90vh;
+            
+          
+            
+        transition-duration: 0.5s;
+            
+        background-color: rgba(255,255,255);
+            
+        z-index: 10;    
+       
+       }
+    
+        
+        
+        
+        
+        
+        
+        .ground{
+            position: absolute;
+            left: 0px;
+            bottom:0px;
+            
+            
+            width: 100vw;
+            height: 3vh;
+            background-color: white;
+        }
+        
+        
+        
+        
+        .archive{
+            position: absolute;
+            bottom: 3vh;
+            left: 30vw;
+            right: 0px;
+            
+            width: 80vw;
+            height: 9vh;
+            
+            font-size:11px;
+            
+            
+            
+            color: white;
+            text-align: center;
+            line-height: 10px;
+            
+            
+            
+        }
+        
+                    .mmca{
+                    position: absolute;
+                    left:0px;
+                    top:6vh;    
+                        
+                    width: 70vw;
+                    height: 3vh;
+                        
+                    background-color: white;
+                    opacity: 0.95;
+                        
+                    text-decoration-color: white;    
+                    }
+        
+                    .mmca:hover{
+                        opacity: 1;
+                        color: black;  
+                        
+                    }
+        
+        
+                    .london{
+                    position: absolute;
+                    left:0px;
+                    top:3vh;    
+                        
+                    width: 70vw;
+                    height: 3vh;
+                        
+                    background-color: white;
+                    opacity: 0.9;    
+                    }
+        
+                    .london:hover{
+                        opacity: 1;
+                        color: black;   
+                        
+                    }
+        
+                    .locus{
+                    position: absolute;
+                    left:0px;
+                    top:0vh;    
+                        
+                    width: 70vw;
+                    height: 3vh;
+                        
+                    background-color: white;
+                    opacity: 0.85;     
+                    }
+        
+                    .locus:hover{
+                    opacity: 1;
+                    color: black;    
+                        vertical-align: center;
+                    }
+        
+        
+        .live-station{
+        position: absolute;
+        right:30vw;;
+        bottom:12vh;
+            
+        width: 40vw;
+        height: 50vh;
+            
+        border:1px solid white;  
+       
+       }
+        
+        .chat{
+        position: absolute;
+        right:0vw;;
+        bottom:52vh;
+            
+        width:20vw;
+        height: 45vh;
+            
+        border:1px solid white;     
+        }
+        
+        
+        .team-depot-station{
+        position: absolute;
+        right:0vw;
+        bottom:12vh;
+            
+        width: 30vw;
+        height: 40vh;
+            
+        border:1px solid white; 
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+   <div class="background">
+       
+       <div class="work-box">
+       
+       <div class="category">
+            
+                    
+            <div class="works">
+                <div class="workabout">
+                <div class="grey"></div> <p class="list">Fence drawing</p>
+                </div>
+                
+                <div class="workabout">
+                <div class="grey"></div> <p class="list">Fence drawing</p>
+                </div>
+            </div>  
+            
+                 
+                           
+           </div>
+       </div>
+       
+       <div class="map">
+           
+       </div>
+       
+       
+       
+       
+       <div class="live-station">
+           <iframe src="https://video.ibm.com/embed/23948584?volume=0&autoplay=true" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="100%" height="100%"></iframe>
+       </div>
+       
+       <div class="chat">
+           <iframe src="https://video.ibm.com/socialstream/23948584?videos=0" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="100%" height="100%"></iframe>
+       </div>
+       
+       <div class="team-depot-station">
+           
+       </div>
+       
+       <div class="archive">
+            <div class="locus">
+                <p> Love Your Depot_Locus</p>
+            </div>
+            
+            <div class="london">
+                <p> Love Your Depot_London</p>
+            </div>
+            
+            <div class="mmca">
+                <p> Love Your Depot_MMCA</p>
+            </div>
+       </div>
+       
+       
+       <div class="ground">
+           
+       </div>
+   </div>
+    
+</body>
+</html>
