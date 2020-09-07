@@ -149,6 +149,7 @@
             
         z-index: 10;    
        
+        overflow: hidden;    
        }
         
         .map:hover{
@@ -169,10 +170,21 @@
        
        }
     
+        .map_london{
+            width: 1000px;
+        }
         
         
-        
-        
+        .intainer{
+            position: absolute;
+            left: 347px;
+            top: 292px;
+            
+            width: 40px;
+            height: 40px;
+            
+            background-color: yellow;
+        }
         
         
         .ground{
@@ -181,7 +193,7 @@
             bottom:-30vh;
             
             
-            width: 100vw;
+            width: 120vw;
             height: 3vh;
             background-color: white;
         }
@@ -210,20 +222,38 @@
                     .mmca{
                     position: absolute;
                     left:0px;
-                    top:6vh;    
+                    bottom:0vh;   
                         
                     width: 70vw;
                     height: 3vh;
                         
                     background-color: white;
-                    opacity: 0.95;
-                        
-                    text-decoration-color: white;    
+                    opacity: 0.8;
+                    
+                    transition-delay: 0s;
+                    transition-duration: 3s;    
+                    z-index: 10;    
+                    color: white;
                     }
         
                     .mmca:hover{
                         opacity: 1;
                         color: black;  
+                        position: absolute;
+                        left:0px;
+                        bottom:0vh;
+                        
+                        width: 70vw;
+                        height: 90vh;
+                        
+                        background-color: white;
+                        opacity: 1;
+                        
+                        transition-delay: 0s;
+                        transition-duration: 3s; 
+                        z-index: 10;
+                        
+                        color:black;
                         
                     }
         
@@ -277,9 +307,29 @@
        
         background-color: rgba(255,255,255);    
             
-           
+        opacity: 0.1;   
+        transition-duration: 3s; 
+        transition-delay: 20s;      
+        
+        z-index: 9;    
+       }
+        
+        .live-station:hover{
+        position: absolute;
+        right:30vw;;
+        bottom:12vh;
             
-         
+        width: 40vw;
+        height: 50vh;
+            
+        
+       
+        background-color: rgba(255,255,255);    
+            
+        opacity: 1;  
+        transition-duration: 2s; 
+        transition-delay: 0s;  
+        z-index: 9;     
        }
         
         
@@ -288,40 +338,23 @@
         .live-station-cover{
         position: absolute;
         right:30vw;;
-        top:37.5vh;
+        bottom:12vh;
             
         width: 41vw;
         height: 50vh;
             
          
        
-        background-color: rgba(255,255,255, 0.9); 
+        background-color: rgba(255,255,255, 1); 
             
        
-        transition-property: height;      
-        transition-delay: 10s; 
-        transition-duration: 7s;
+        z-index: 1;
         
         }
         
         
         
-        .live-station-cover:hover{
-        position: absolute;
-        right:30vw;;
-        top:37.5vh;
-            
-        width: 41vw;
-        height: 0vh;
-        
-        transition-property: height;  
-        transition-delay: 0s;     
-        transition-duration: 0s; 
-        
-        
-        color: black;    
-        }
-      
+       
         
         
         
@@ -336,9 +369,41 @@
         width:20vw;
         height: 45vh;
             
-        border:1px solid white;     
+        transition-duration: 1s;  
+        transition-delay: 20s; 
+            
+        opacity: 0.1;  
+            
+        z-index: 9;    
         }
         
+        .chat:hover{
+        position: absolute;
+        right:0vw;;
+        bottom:52vh;
+            
+        width:20vw;
+        height: 45vh;
+             
+        transition-duration: 1s; 
+        transition-delay: 0s; 
+        opacity:1;    
+            
+        z-index: 9;    
+        }
+        
+        
+        .chat-cover{
+        position: absolute;
+        right:0vw;;
+        bottom:52vh;
+            
+        width:20vw;
+        height: 45vh;
+        background-color: white;
+        z-index: 1;    
+            
+        }
         
         .team-depot-station{
         position: absolute;
@@ -347,6 +412,17 @@
             
         width: 30vw;
         height: 40vh;
+            
+        border:1px solid white; 
+        }
+        
+         .team-depot-station2{
+        position: absolute;
+        left:  30vw;
+        bottom:-24vh;
+            
+        width: 60vw;
+        height: 36vh;
             
         border:1px solid white; 
         }
@@ -503,7 +579,8 @@
        </div>
        
        <div class="map">
-           
+           <img src="map_london.jpg" class="map_london" alt="map for lodon">
+           <a href="index.html"><div class="intainer"></div></a>
        </div>
        
        
@@ -511,32 +588,46 @@
        
        <div class="live-station">
            <iframe src="https://video.ibm.com/embed/23948584?volume=0&autoplay=true" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="100%" height="100%">
-           </iframe>
-           
-           
+           </iframe>  
        </div>
        
-       <div class="live-station-cover">
        
-       </div>
+       <div class="live-station-cover"></div>
        
        <div class="chat">
            <iframe src="https://video.ibm.com/socialstream/23948584?videos=0" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="100%" height="100%"></iframe>
        </div>
+       <div class="chat-cover"></div>
        
        <div class="team-depot-station">
            
        </div>
        
+       <div class="team-depot-station2">
+           
+       </div>
+       
+       <div class="team-depot-station3">
+           
+       </div>
+       
+       
+       
+       
+       
+       
+       
        <div class="archive">
+           <!--
             <div class="locus">
                 <p> Love Your Depot_Locus</p>
             </div>
             
+            
             <div class="london">
                 <p> Love Your Depot_London</p>
             </div>
-            
+            -->
             <div class="mmca">
                 <p> Love Your Depot_MMCA</p>
             </div>
